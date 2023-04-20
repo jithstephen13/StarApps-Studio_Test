@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <main>
+         <div id="Img_container">
+            <img id="Umbrella_img" src="./Umbrella project assets//Blue umbrella.png" alt="umberla">
+            <img id="Umbrella_img_rota" src="./Umbrella project assets/loader_icon.svg" alt="umberla">
+            <div id="logo_conta">
+                <img id="Umbrella_Logo_img" src="" alt="umberla"> 
+            </div>
+
+         </div>
+         <div id="btton_container">
+            <h1>Custome umberlla</h1>
+
+             <div>
+                <button data-color="blue" class="colure_coose blue active"  style="background-color: blue; "></button>
+                <button  data-color="pink" class="colure_coose pink" style="background-color: red;"></button>
+                <button  data-color="yellow" class="colure_coose yellow"style="background-color: yellow;"></button>
+
+             </div>
+
+             <h4>Custamise your umberlla</h4>
+             upload your logo in png or jpg
+             <div class="input_img_cont">
+                 <input type='file' id="Upload_img" onchange="showType(this);"  />
+             <button id="imge_btn" onclick="UploadImgfun()"> Upload</button>
+             </div>
+
+            
+           
+
+
+         </div>
+            
+    </main>
+    
+</body>
+</html>
+<script src="index.js"></script>

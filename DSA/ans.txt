@@ -1,0 +1,36 @@
+function MinNumberofPlane(arr) {
+  let p = 0;
+  let fuel = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > fuel) {
+      p++;
+      fuel = arr[i];
+        
+            if(fuel==arr[arr.length-1]&&i==arr.length-1){
+            return  p   
+            }
+
+    } else {
+      fuel--;
+    }
+  }
+
+  return -1
+}
+
+ let arr = [1,6,3,4,5,0,0,0,6]
+  
+let y=MinNumberofPlane(arr)
+console.log(y)
+
+time complexity O(n)
+space complexity O(1)
+
+My approch => * in first am in first plane arr[0] in heare i can only travel till arr[1] becouse my fuel 1
+              * so i went to  arr[1]  so it have fulel  6    with fulel  i n need to move forword and also i need to find a plane that  have more than fuel i have
+              *  so  arr[2] => the fuel is less than i have so am moving forword my fuel is degreesing my fuel is = 5 now 
+              * in arr [3] => that plane have fuel 4 but i have 5 so moving forword now my fuel is =4
+              *  when am in arr arr[4] => it have more than i have so am changing my plane  now my planechanged cout 2 my fuel is= 5
+              *  so am moving to arr[5] ,arr[6],arr[7] they didn't have fuel so am  my fuel is degreasing  fuel is =2 so am getting in to arr[8] 
+              *  when my fuel is less the opp plane fuel so am just cheacking am at last plane or not   
